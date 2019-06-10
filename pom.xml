@@ -17,6 +17,16 @@
 
     <name>Aadhaar - Template Application</name>
 
+    <repositories>
+        <repository>
+            <releases>
+                <enabled>true</enabled>
+            </releases>
+            <id>infobelt-nexus</id>
+            <url>https://nexus.jx.infobelt.com/repository/maven-releases/</url>
+        </repository>
+    </repositories>     
+         
     <dependencies>
 
         <!-- Include both lombok and Aadhaar -->
