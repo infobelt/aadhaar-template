@@ -25,8 +25,16 @@
             <id>infobelt-nexus</id>
             <url>https://nexus.jx.infobelt.com/repository/maven-releases/</url>
         </repository>
+        <repository>
+            <snapshots>
+                <enabled>false</enabled>
+            </snapshots>
+            <id>jcenter-releases</id>
+            <name>jcenter</name>
+            <url>http://jcenter.bintray.com</url>
+    	</repository>
     </repositories>     
-         
+
     <dependencies>
 
         <!-- Include both lombok and Aadhaar -->
@@ -39,7 +47,7 @@
         <dependency>
             <groupId>com.infobelt.aadhaar</groupId>
             <artifactId>aadhaar-spring-boot</artifactId>
-            <version>0.1.0-SNAPSHOT</version>
+            <version>0.2.0-SNAPSHOT</version>
         </dependency>
 
 
@@ -87,7 +95,7 @@
         <dependency>
             <groupId>com.infobelt.aadhaar</groupId>
             <artifactId>aadhaar-test</artifactId>
-            <version>0.1.0-SNAPSHOT</version>
+            <version>0.2.0-SNAPSHOT</version>
         </dependency>
         <dependency>
             <groupId>junit</groupId>
