@@ -1,6 +1,10 @@
 databaseChangeLog:
   - changeSet:
-      id: empty-example
-      author: liquibase-docs
+      id: 01
+      author: aadhaar-template
       changes:
-        - empty: {}
+        - createSequence:
+            cycle: true
+            incrementBy: 1
+            sequenceName: hibernate_sequence
+            startValue: 1
